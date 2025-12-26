@@ -1,0 +1,98 @@
+﻿/* Скидання стандартних відступів браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Контейнер з двома колонками */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Ліва колонка */
+.sidebar {
+    width: 30%;
+    background-color: #ff4db8;
+    padding: 30px;
+    color: #000;
+}
+
+/* Фото */
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Заголовки у лівій колонці */
+.sidebar h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.position {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Підзаголовки */
+.sidebar h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+}
+
+/* Списки */
+.sidebar ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Права колонка */
+.content {
+    width: 70%;
+    padding: 40px;
+}
+
+    /* Заголовок з ПІБ */
+    .content h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    /* Заголовки секцій */
+    .content h3 {
+        color: #ff4db8;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    /* Списки у правій колонці */
+    .content ul {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+/* АДАПТИВНІСТЬ */
+@media (max-width: 768px) {
+
+    /* Колонки стають вертикальними */
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .content {
+        width: 100%;
+    }
+}
